@@ -5,7 +5,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.web.SecurityFilterChain;
-
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
@@ -21,13 +20,14 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests(authorizeRequests ->
                         authorizeRequests
-                                .requestMatchers("/products").permitAll()
-                                .requestMatchers("/products/**").authenticated()
-                                .anyRequest().permitAll()
+                                .requestMatchers("/products").permitAll() // Доступ к списку продуктов
+                                .requestMatchers("/products/{id}").hasRole("CLIENT") // Клиенты могут просматривать продукт
+                                .requestMatchers("/products/**").hasRole("ADMIN") // Только администраторы могут изменять продукты
+                                .anyRequest().authenticated() // Все остальные запросы требуют аутентификации
                 )
                 .oauth2Login(oauth2Login ->
                         oauth2Login
-                                .successHandler(oAuth2LoginSuccessHandler) // Подключаем обработчик успешного входа
+                                .successHandler(oAuth2LoginSuccessHandler)
                                 .failureUrl("/login?error")
                 )
                 .logout(logout ->
