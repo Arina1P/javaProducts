@@ -11,12 +11,23 @@ public class User {
     private String name;
     private Integer githubId;
 
-    // Конструкторы, геттеры и сеттеры
     public User() {}
 
     public User(String name, Integer githubId) {
         this.name = name;
         this.githubId = githubId;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "role_id")
+    private Role role;
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+    public Role getRole() {
+        return role;
     }
 
     public Long getId() {
