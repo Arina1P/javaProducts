@@ -2,13 +2,13 @@ package com.example.products.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
-
     private final OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler;
 
     public SecurityConfig(OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler) {
@@ -20,9 +20,9 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests(authorizeRequests ->
                         authorizeRequests
-                                .requestMatchers("/products").permitAll() // Доступ к списку продуктов
-                                .requestMatchers("/products/{id}").hasRole("CLIENT") // Клиенты могут просматривать продукт
-                                .requestMatchers("/products/**").hasRole("ADMIN") // Только администраторы могут изменять продукты
+                                .requestMatchers(HttpMethod.GET, "/products").permitAll() // Доступен всем
+                                .requestMatchers(HttpMethod.GET, "/products/{id}").hasAnyRole("CLIENT", "ADMIN") // Доступен клиентам и админам
+                                .requestMatchers("/products/**").hasRole("ADMIN") // Остальные запросы /products/** доступны только админам
                                 .anyRequest().authenticated() // Все остальные запросы требуют аутентификации
                 )
                 .oauth2Login(oauth2Login ->
