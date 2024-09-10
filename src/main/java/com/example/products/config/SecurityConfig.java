@@ -1,6 +1,7 @@
 package com.example.products.config;
 
 import com.example.products.service.CustomUserDetailsService;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -44,6 +45,13 @@ public class SecurityConfig {
                                 .logoutSuccessUrl("/login?logout")
                                 .permitAll()
                 );
+
+        http.exceptionHandling(exh -> exh.authenticationEntryPoint(
+                (request, response, exception) -> {
+                    response.sendError(HttpServletResponse.SC_UNAUTHORIZED);
+                }
+        ));
+
         return http.build();
     }
 
