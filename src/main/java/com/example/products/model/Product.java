@@ -4,19 +4,28 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "products")
-
 public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String name;
     private String description;
     private double price;
 
-    // Геттеры и сеттеры
+    // Конструктор по умолчанию
+    public Product() {
+    }
 
+    // Конструктор с параметрами
+    public Product(Long id, String name, String description, double price) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.price = price;
+    }
+
+    // Геттеры и сеттеры
     public Long getId() {
         return id;
     }
