@@ -3,9 +3,11 @@ package com.example.products.controller;
 import com.example.products.model.Product;
 import com.example.products.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.server.ResponseStatusException;
 
 
 import java.util.List;
@@ -30,6 +32,13 @@ public class ProductController {
     public Product getProductById(@PathVariable Long id) {
         logger.info("Был выполнен запрос на получение продукта с id " + id);
         Optional<Product> product = productRepository.findById(id);
+
+        if (product.isEmpty()) {
+            throw new ResponseStatusException(
+                    HttpStatus.NOT_FOUND, "entity not found"
+            );
+        }
+
         return product.orElse(null);
     }
 
