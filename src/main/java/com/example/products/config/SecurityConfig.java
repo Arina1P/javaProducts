@@ -24,6 +24,8 @@ public class SecurityConfig {
         this.customUserDetailsService = customUserDetailsService;
     }
 
+    // Для авторизации https://github.com/login/oauth/authorize?client_id=Ov23liANE8T6CVBYUwss&redirect_uri=http://localhost:8080/login/oauth2/code/github&scope=read:user user:email
+    // Получить код из ответа
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
@@ -65,6 +67,3 @@ public class SecurityConfig {
         return customUserDetailsService;
     }
 }
-
-// Для авторизации https://github.com/login/oauth/authorize?client_id=Ov23liANE8T6CVBYUwss&redirect_uri=http://localhost:8080/login/oauth2/code/github&scope=read:user user:email
-// Получить код из ответа
