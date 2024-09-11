@@ -1,0 +1,89 @@
+2024-09-11 20:05:38 - Starting ProductsApplication using Java 22.0.2 with PID 16960 (/home/arina/IdeaProjects/javaProducts/target/classes started by arina in /home/arina/IdeaProjects/javaProducts)
+2024-09-11 20:05:38 - No active profile set, falling back to 1 default profile: "default"
+2024-09-11 20:05:39 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-11 20:05:39 - Finished Spring Data repository scanning in 23 ms. Found 3 JPA repository interfaces.
+2024-09-11 20:05:39 - Tomcat initialized with port 8080 (http)
+2024-09-11 20:05:39 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-11 20:05:39 - Starting service [Tomcat]
+2024-09-11 20:05:39 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-09-11 20:05:39 - Initializing Spring embedded WebApplicationContext
+2024-09-11 20:05:39 - Root WebApplicationContext: initialization completed in 606 ms
+2024-09-11 20:05:39 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-11 20:05:39 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-09-11 20:05:39 - HHH000026: Second-level cache disabled
+2024-09-11 20:05:39 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-11 20:05:39 - HikariPool-1 - Starting...
+2024-09-11 20:05:39 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27db45f
+2024-09-11 20:05:39 - HikariPool-1 - Start completed.
+2024-09-11 20:05:39 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-11 20:05:40 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-11 20:05:40 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-11 20:05:40 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-11 20:05:40 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2ef3efcc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60655642, org.springframework.security.web.context.SecurityContextHolderFilter@230e163b, org.springframework.security.web.header.HeaderWriterFilter@6956081d, org.springframework.web.filter.CorsFilter@5c7b504, org.springframework.security.web.csrf.CsrfFilter@4199761d, org.springframework.security.web.authentication.logout.LogoutFilter@492a220e, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@2ac0cb64, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@640028f2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4ae435a3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@772589ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@186e254, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a827b0c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4619854a, org.springframework.security.web.access.ExceptionTranslationFilter@3fae357f, org.springframework.security.web.access.intercept.AuthorizationFilter@60e5b3a8]
+2024-09-11 20:05:40 - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-11 20:05:40 - Tomcat started on port 8080 (http) with context path ''
+2024-09-11 20:05:40 - Started ProductsApplication in 2.147 seconds (process running for 2.465)
+2024-09-11 20:05:54 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-11 20:05:54 - Initializing Servlet 'dispatcherServlet'
+2024-09-11 20:05:54 - Completed initialization in 0 ms
+2024-09-11 20:05:54 - Был выполнен запрос на получение списка продуктов
+2024-09-11 20:06:59 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-11 20:06:59 - HikariPool-1 - Shutdown initiated...
+2024-09-11 20:06:59 - HikariPool-1 - Shutdown completed.
+2024-09-11 20:07:01 - Starting ProductsApplication using Java 22.0.2 with PID 17506 (/home/arina/IdeaProjects/javaProducts/target/classes started by arina in /home/arina/IdeaProjects/javaProducts)
+2024-09-11 20:07:01 - No active profile set, falling back to 1 default profile: "default"
+2024-09-11 20:07:02 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-11 20:07:02 - Finished Spring Data repository scanning in 23 ms. Found 3 JPA repository interfaces.
+2024-09-11 20:07:02 - Tomcat initialized with port 8080 (http)
+2024-09-11 20:07:02 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-11 20:07:02 - Starting service [Tomcat]
+2024-09-11 20:07:02 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-09-11 20:07:02 - Initializing Spring embedded WebApplicationContext
+2024-09-11 20:07:02 - Root WebApplicationContext: initialization completed in 625 ms
+2024-09-11 20:07:02 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-11 20:07:02 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-09-11 20:07:02 - HHH000026: Second-level cache disabled
+2024-09-11 20:07:02 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-11 20:07:02 - HikariPool-1 - Starting...
+2024-09-11 20:07:02 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7d3c22a5
+2024-09-11 20:07:02 - HikariPool-1 - Start completed.
+2024-09-11 20:07:02 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-11 20:07:03 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-11 20:07:03 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-11 20:07:03 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-11 20:07:03 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5a2297d7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52e34db, org.springframework.security.web.context.SecurityContextHolderFilter@2ded31cc, org.springframework.security.web.header.HeaderWriterFilter@73db1a6, org.springframework.web.filter.CorsFilter@39d37da8, org.springframework.security.web.csrf.CsrfFilter@2cf97875, org.springframework.security.web.authentication.logout.LogoutFilter@50bc0bbd, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@4cbd17b3, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@2703785e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3cd758be, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@554a2f3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6fb2b972, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5fa3df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b8601a1, org.springframework.security.web.access.ExceptionTranslationFilter@678b3746, org.springframework.security.web.access.intercept.AuthorizationFilter@6a9a6a0c]
+2024-09-11 20:07:03 - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-11 20:07:03 - Tomcat started on port 8080 (http) with context path ''
+2024-09-11 20:07:03 - Started ProductsApplication in 2.169 seconds (process running for 2.466)
+2024-09-11 20:07:04 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-11 20:07:04 - Initializing Servlet 'dispatcherServlet'
+2024-09-11 20:07:04 - Completed initialization in 1 ms
+2024-09-11 20:07:20 - Был выполнен запрос на получение продукта с id2
+2024-09-11 20:07:34 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-11 20:07:34 - HikariPool-1 - Shutdown initiated...
+2024-09-11 20:07:34 - HikariPool-1 - Shutdown completed.
+2024-09-11 20:07:36 - Starting ProductsApplication using Java 22.0.2 with PID 17696 (/home/arina/IdeaProjects/javaProducts/target/classes started by arina in /home/arina/IdeaProjects/javaProducts)
+2024-09-11 20:07:36 - No active profile set, falling back to 1 default profile: "default"
+2024-09-11 20:07:36 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-11 20:07:36 - Finished Spring Data repository scanning in 26 ms. Found 3 JPA repository interfaces.
+2024-09-11 20:07:36 - Tomcat initialized with port 8080 (http)
+2024-09-11 20:07:36 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-11 20:07:36 - Starting service [Tomcat]
+2024-09-11 20:07:36 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-09-11 20:07:36 - Initializing Spring embedded WebApplicationContext
+2024-09-11 20:07:36 - Root WebApplicationContext: initialization completed in 641 ms
+2024-09-11 20:07:36 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-11 20:07:36 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-09-11 20:07:36 - HHH000026: Second-level cache disabled
+2024-09-11 20:07:37 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-11 20:07:37 - HikariPool-1 - Starting...
+2024-09-11 20:07:37 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@18d610e1
+2024-09-11 20:07:37 - HikariPool-1 - Start completed.
+2024-09-11 20:07:37 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-11 20:07:37 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-11 20:07:37 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-11 20:07:37 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-11 20:07:37 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5c3e7128, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ce03a9d, org.springframework.security.web.context.SecurityContextHolderFilter@476dc0af, org.springframework.security.web.header.HeaderWriterFilter@4d0e6424, org.springframework.web.filter.CorsFilter@10c67c1c, org.springframework.security.web.csrf.CsrfFilter@174aabb2, org.springframework.security.web.authentication.logout.LogoutFilter@1cdb290c, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@48861d1, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@73d7e7aa, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3fae357f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1067192a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@570ede3b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c22cf4d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f7f9d3f, org.springframework.security.web.access.ExceptionTranslationFilter@5c8d685e, org.springframework.security.web.access.intercept.AuthorizationFilter@5f5fb335]
+2024-09-11 20:07:38 - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-11 20:07:38 - Tomcat started on port 8080 (http) with context path ''
+2024-09-11 20:07:38 - Started ProductsApplication in 2.201 seconds (process running for 2.502)
