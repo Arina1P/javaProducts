@@ -29,6 +29,7 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests(authorizeRequests ->
                         authorizeRequests
+                                .requestMatchers("/admin/**").hasRole("ADMIN")
                                 .requestMatchers(HttpMethod.GET, "/products").permitAll() // Доступен всем
                                 .requestMatchers(HttpMethod.GET, "/products/{id}").hasAnyRole("CLIENT", "ADMIN") // Доступен клиентам и админам
                                 .requestMatchers("/products/**").hasRole("ADMIN") // Остальные запросы /products/** доступны только админам
