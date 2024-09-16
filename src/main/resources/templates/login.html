@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" >
-<head th:replace="~{base :: header(~{this ::title})}">
+<head th:replace="~{auth :: header(~{this ::title})}">
     <title>Авторизация</title>
 </head>
 <body>
-    <div class="main" th:replace="~{base :: layout(~{this ::main})}">
-        <main class="container min-vh-100">
-            <div class="d-flex mx-auto h-100">
+    <div class="main" th:replace="~{auth :: layout(~{this ::main})}">
+        <main class="container min-vh-100 d-flex align-items-center">
+            <div class="d-flex mx-auto h-100 justify-content-center">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title">Авторизация устройства</h5>
                         <p>Для продолжения работы на сайте необходима авторизация</p>
-                        <a href="/oauth2/authorization/github" class="btn btn-primary">Авторризация через GitHub</a>
+                        <a href="/oauth2/authorization/github" class="btn btn-primary">Авторизация через GitHub</a>
                     </div>
                 </div>
             </div>

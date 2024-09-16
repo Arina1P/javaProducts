@@ -46,15 +46,9 @@ public class SecurityConfig {
                 )
                 .logout(logout ->
                         logout
-                                .logoutSuccessUrl("/login?logout")
+                                .logoutSuccessUrl("/products?logout")
                                 .permitAll()
                 );
-
-//        http.exceptionHandling(exh -> exh.authenticationEntryPoint(
-//                (request, response, exception) -> {
-//                    response.sendError(HttpServletResponse.SC_UNAUTHORIZED);
-//                }
-//        ));
 
         return http.build();
     }

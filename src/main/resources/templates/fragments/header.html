@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+    <header th:fragment="haeader(user)">
+        <div class="d-flex w-100 mb-3">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+                <div class="container">
+                    <a class="navbar-brand" href="/">Учебный проект</a>
+
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/products">Продукты</a>
+                            </li>
+
+                            <li th:if="${user != null}" class="nav-item">
+                                <a class="nav-link" href="/admin/users">Управление пользователями</a>
+                            </li>
+                        </ul>
+
+                        <div>
+                            <a class="btn btn-primary" href="/login" th:if="${user == null}">Авторизоваться</a>
+                            <form th:unless="${user == null}" action="#" th:action="@{/logout}" th:method="post">
+                                <a href="#" ><span th:text="${user.name}" /></a>
+                                <button type="submit" class="btn btn-warning">Выход</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>

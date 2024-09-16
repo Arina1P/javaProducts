@@ -4,7 +4,7 @@
     <title>Создание продукта</title>
 </head>
 <body>
-    <div class="main" th:replace="~{base :: layout(~{this ::main})}">
+    <div class="main" th:replace="~{base :: layout(~{this ::main}, ${user})}">
         <main>
             <div class="container">
                 <form action="#" th:action="@{/products}" th:method="post">

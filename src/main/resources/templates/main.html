@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head th:replace="~{base :: header(~{this ::title})}">
+    <title>Продукты</title>
+</head>
+<body>
+    <div class="main" th:replace="~{base :: layout(~{this ::main}, ${authUser})}">
+        <main>
+            <div class="container d-flex justify-content-center">
+                <h1>Учебный проект студентки (группа) Елизаровой Арины</h1>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

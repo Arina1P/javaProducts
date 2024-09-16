@@ -11,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.security.Principal;
 import java.util.Optional;
 
 @Controller
@@ -23,15 +24,16 @@ public class ProductController {
     private ProductRepository productRepository;
 
     @GetMapping
-    public String getAllProducts(Model model) {
+    public String getAllProducts(Model model, Principal principal) {
         logger.info("Был выполнен запрос на получение списка продуктов");
         model.addAttribute("products", productRepository.findAll());
+        model.addAttribute("user", principal);
 
         return "products";
     }
 
     @GetMapping("/{id}")
-    public String getProductById(@PathVariable Long id, Model model) {
+    public String getProductById(@PathVariable Long id, Model model, Principal principal) {
         logger.info("Был выполнен запрос на получение продукта с id " + id);
         Optional<Product> product = productRepository.findById(id);
 
@@ -41,13 +43,16 @@ public class ProductController {
             );
         }
 
+        model.addAttribute("user", principal);
         model.addAttribute("product", product.get());
 
         return "product_edit";
     }
 
     @GetMapping("/create")
-    public String createProduct() {
+    public String createProduct(Model model, Principal principal) {
+        model.addAttribute("user", principal);
+
         return "product_create";
     }
 

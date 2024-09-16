@@ -4,7 +4,7 @@
     <title>Продукт</title>
 </head>
 <body>
-    <div class="main" th:replace="~{base :: layout(~{this ::main})}">
+    <div class="main" th:replace="~{base :: layout(~{this ::main}, ${user})}">
         <main>
             <div class="container">
                 <form action="#" th:action="@{/products/{id}(id=${product.id})}" th:object="${product}" th:method="put">

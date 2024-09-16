@@ -4,7 +4,7 @@
     <title>Пользователи</title>
 </head>
 <body>
-    <div class="main" th:replace="~{base :: layout(~{this ::main})}">
+    <div class="main" th:replace="~{base :: layout(~{this ::main}, ${authUser})}">
         <main>
             <div class="container">
                 <table class="table table-primary table-striped">
@@ -24,7 +24,7 @@
                             <td th:text="${user.name}" />
                             <td th:text="${user.role.name}" />
                             <td>
-                                <form action="#" th:object="${user}" th:action="@{/admin/assignAdminRole/{id}(id=${user.id})}" th:method="get">
+                                <form th:if="${user != null && user.role.name != 'ROLE_ADMIN'}" action="#" th:object="${user}" th:action="@{/admin/assignAdminRole/{id}(id=${user.id})}" th:method="get">
                                     <button type="submit" class="btn btn-success">Назначить админом</button>
                                 </form>
 

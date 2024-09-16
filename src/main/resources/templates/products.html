@@ -4,10 +4,10 @@
     <title>Продукты</title>
 </head>
 <body>
-    <div class="main" th:replace="~{base :: layout(~{this ::main})}">
+    <div class="main" th:replace="~{base :: layout(~{this ::main}, ${user})}">
         <main>
             <div class="container">
-                <a class="btn btn-primary" href="/products/create">Добавить продукт</a>
+                <a class="btn btn-primary mb-2" href="/products/create">Добавить продукт</a>
 
                 <table class="table table-primary table-striped">
                     <thead>
