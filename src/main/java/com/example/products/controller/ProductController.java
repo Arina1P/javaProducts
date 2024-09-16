@@ -4,16 +4,16 @@ import com.example.products.model.Product;
 import com.example.products.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.server.ResponseStatusException;
 
-
-import java.util.List;
 import java.util.Optional;
 
-@RestController
+@Controller
 @RequestMapping("/products")
 public class ProductController {
 
@@ -23,13 +23,15 @@ public class ProductController {
     private ProductRepository productRepository;
 
     @GetMapping
-    public List<Product> getAllProducts() {
+    public String getAllProducts(Model model) {
         logger.info("Был выполнен запрос на получение списка продуктов");
-        return productRepository.findAll();
+        model.addAttribute("products", productRepository.findAll());
+
+        return "products";
     }
 
     @GetMapping("/{id}")
-    public Product getProductById(@PathVariable Long id) {
+    public String getProductById(@PathVariable Long id, Model model) {
         logger.info("Был выполнен запрос на получение продукта с id " + id);
         Optional<Product> product = productRepository.findById(id);
 
@@ -39,27 +41,44 @@ public class ProductController {
             );
         }
 
-        return product.orElse(null);
+        model.addAttribute("product", product.get());
+
+        return "product_edit";
     }
 
-    @PostMapping
-    public Product createProduct(@RequestBody Product product) {
-        return productRepository.save(product);
+    @GetMapping("/create")
+    public String createProduct() {
+        return "product_create";
     }
 
-    @PutMapping("/{id}")
-    public Product updateProduct(@PathVariable Long id, @RequestBody Product productDetails) {
+    @PostMapping(consumes = "application/x-www-form-urlencoded")
+    public String createProduct(Product product) {
+        Product createdProduct = productRepository.save(product);
+
+        return "redirect:/products/" + createdProduct.getId();
+    }
+
+    @PutMapping(path = "/{id}", consumes = "application/x-www-form-urlencoded")
+    public String updateProduct(
+            @PathVariable Long id,
+            Product productDetails
+    ) {
         logger.info("Продукт с id " + id + " был обновлен");
 
         Product product = productRepository.findById(id).orElseThrow();
         product.setName(productDetails.getName());
         product.setDescription(productDetails.getDescription());
         product.setPrice(productDetails.getPrice());
-        return productRepository.save(product);
+
+        productRepository.save(product);
+
+        return "redirect:/products/" + id;
     }
 
     @DeleteMapping("/{id}")
-    public void deleteProduct(@PathVariable Long id) {
+    public String deleteProduct(@PathVariable Long id) {
         productRepository.deleteById(id);
+
+        return "redirect:/products";
     }
 }

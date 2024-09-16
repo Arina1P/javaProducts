@@ -56,6 +56,8 @@ public class OAuth2LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHan
         );
         SecurityContextHolder.getContext().setAuthentication(newAuth);
 
+        this.setDefaultTargetUrl("/products");
+
         super.onAuthenticationSuccess(request, response, authentication);
     }
 }

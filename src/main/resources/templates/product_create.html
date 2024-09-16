@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head th:replace="~{base :: header(~{this ::title})}">
+    <title>Создание продукта</title>
+</head>
+<body>
+    <div class="main" th:replace="~{base :: layout(~{this ::main})}">
+        <main>
+            <div class="container">
+                <form action="#" th:action="@{/products}" th:method="post">
+                    <div class="form-group">
+                        <label for="input-name">Название</label>
+                        <input name="name" type="text" class="form-control" id="input-name" placeholder="Введите название продукта">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-description">Описание</label>
+                        <textarea placeholder="Введите описание" class="form-control" id="input-description" rows="3" name="description"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-price">Цена</label>
+                        <input name="price" type="text" class="form-control" id="input-price" placeholder="Введите цену">
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Сохранить</button>
+                    <a class="btn btn-primary" href="/products">Назад</a>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

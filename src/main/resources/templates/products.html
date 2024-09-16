@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head th:replace="~{base :: header(~{this ::title})}">
+    <title>Продукты</title>
+</head>
+<body>
+    <div class="main" th:replace="~{base :: layout(~{this ::main})}">
+        <main>
+            <div class="container">
+                <a class="btn btn-primary" href="/products/create">Добавить продукт</a>
+
+                <table class="table table-primary table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Название</th>
+                        <th scope="col">Описание</th>
+                        <th scope="col">Цена</th>
+                        <th scope="col">Действие</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="product: ${products}">
+                        <td><a th:href="@{/products/{id}(id=${product.id})}" th:text="${product.id}"></a></td>
+                        <td th:text="${product.name}" />
+                        <td th:text="${product.description}" />
+                        <td th:text="${product.price}" />
+                        <td>
+                            <a class="btn btn-info" th:href="@{/products/{id}(id=${product.id})}">Изменить</a>
+                            <form action="#" th:object="${product}" th:action="@{/products/{id}(id=${product.id})}" th:method="delete">
+                                <button type="submit" class="btn btn-danger">Удалить</button>
+                            </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -31,6 +31,7 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests(authorizeRequests ->
                         authorizeRequests
+                                .requestMatchers("/login").permitAll()
                                 .requestMatchers("/admin/**").hasRole("ADMIN")
                                 .requestMatchers(HttpMethod.GET, "/products").permitAll() // Доступен всем
                                 .requestMatchers(HttpMethod.GET, "/products/{id}").hasAnyRole("CLIENT", "ADMIN") // Доступен клиентам и админам
@@ -41,6 +42,7 @@ public class SecurityConfig {
                         oauth2Login
                                 .successHandler(oAuth2LoginSuccessHandler)
                                 .failureUrl("/login?error")
+                                .loginPage("/login")
                 )
                 .logout(logout ->
                         logout
