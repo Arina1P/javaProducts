@@ -1,89 +1,481 @@
-2024-09-11 20:05:38 - Starting ProductsApplication using Java 22.0.2 with PID 16960 (/home/arina/IdeaProjects/javaProducts/target/classes started by arina in /home/arina/IdeaProjects/javaProducts)
-2024-09-11 20:05:38 - No active profile set, falling back to 1 default profile: "default"
-2024-09-11 20:05:39 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-09-11 20:05:39 - Finished Spring Data repository scanning in 23 ms. Found 3 JPA repository interfaces.
-2024-09-11 20:05:39 - Tomcat initialized with port 8080 (http)
-2024-09-11 20:05:39 - Initializing ProtocolHandler ["http-nio-8080"]
-2024-09-11 20:05:39 - Starting service [Tomcat]
-2024-09-11 20:05:39 - Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-09-11 20:05:39 - Initializing Spring embedded WebApplicationContext
-2024-09-11 20:05:39 - Root WebApplicationContext: initialization completed in 606 ms
-2024-09-11 20:05:39 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-09-11 20:05:39 - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-09-11 20:05:39 - HHH000026: Second-level cache disabled
-2024-09-11 20:05:39 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-09-11 20:05:39 - HikariPool-1 - Starting...
-2024-09-11 20:05:39 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27db45f
-2024-09-11 20:05:39 - HikariPool-1 - Start completed.
-2024-09-11 20:05:39 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-09-11 20:05:40 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-09-11 20:05:40 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-09-11 20:05:40 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-09-11 20:05:40 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2ef3efcc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60655642, org.springframework.security.web.context.SecurityContextHolderFilter@230e163b, org.springframework.security.web.header.HeaderWriterFilter@6956081d, org.springframework.web.filter.CorsFilter@5c7b504, org.springframework.security.web.csrf.CsrfFilter@4199761d, org.springframework.security.web.authentication.logout.LogoutFilter@492a220e, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@2ac0cb64, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@640028f2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4ae435a3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@772589ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@186e254, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a827b0c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4619854a, org.springframework.security.web.access.ExceptionTranslationFilter@3fae357f, org.springframework.security.web.access.intercept.AuthorizationFilter@60e5b3a8]
-2024-09-11 20:05:40 - Starting ProtocolHandler ["http-nio-8080"]
-2024-09-11 20:05:40 - Tomcat started on port 8080 (http) with context path ''
-2024-09-11 20:05:40 - Started ProductsApplication in 2.147 seconds (process running for 2.465)
-2024-09-11 20:05:54 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-11 20:05:54 - Initializing Servlet 'dispatcherServlet'
-2024-09-11 20:05:54 - Completed initialization in 0 ms
-2024-09-11 20:05:54 - Был выполнен запрос на получение списка продуктов
-2024-09-11 20:06:59 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-09-11 20:06:59 - HikariPool-1 - Shutdown initiated...
-2024-09-11 20:06:59 - HikariPool-1 - Shutdown completed.
-2024-09-11 20:07:01 - Starting ProductsApplication using Java 22.0.2 with PID 17506 (/home/arina/IdeaProjects/javaProducts/target/classes started by arina in /home/arina/IdeaProjects/javaProducts)
-2024-09-11 20:07:01 - No active profile set, falling back to 1 default profile: "default"
-2024-09-11 20:07:02 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-09-11 20:07:02 - Finished Spring Data repository scanning in 23 ms. Found 3 JPA repository interfaces.
-2024-09-11 20:07:02 - Tomcat initialized with port 8080 (http)
-2024-09-11 20:07:02 - Initializing ProtocolHandler ["http-nio-8080"]
-2024-09-11 20:07:02 - Starting service [Tomcat]
-2024-09-11 20:07:02 - Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-09-11 20:07:02 - Initializing Spring embedded WebApplicationContext
-2024-09-11 20:07:02 - Root WebApplicationContext: initialization completed in 625 ms
-2024-09-11 20:07:02 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-09-11 20:07:02 - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-09-11 20:07:02 - HHH000026: Second-level cache disabled
-2024-09-11 20:07:02 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-09-11 20:07:02 - HikariPool-1 - Starting...
-2024-09-11 20:07:02 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7d3c22a5
-2024-09-11 20:07:02 - HikariPool-1 - Start completed.
-2024-09-11 20:07:02 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-09-11 20:07:03 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-09-11 20:07:03 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-09-11 20:07:03 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-09-11 20:07:03 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5a2297d7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52e34db, org.springframework.security.web.context.SecurityContextHolderFilter@2ded31cc, org.springframework.security.web.header.HeaderWriterFilter@73db1a6, org.springframework.web.filter.CorsFilter@39d37da8, org.springframework.security.web.csrf.CsrfFilter@2cf97875, org.springframework.security.web.authentication.logout.LogoutFilter@50bc0bbd, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@4cbd17b3, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@2703785e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3cd758be, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@554a2f3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6fb2b972, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5fa3df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b8601a1, org.springframework.security.web.access.ExceptionTranslationFilter@678b3746, org.springframework.security.web.access.intercept.AuthorizationFilter@6a9a6a0c]
-2024-09-11 20:07:03 - Starting ProtocolHandler ["http-nio-8080"]
-2024-09-11 20:07:03 - Tomcat started on port 8080 (http) with context path ''
-2024-09-11 20:07:03 - Started ProductsApplication in 2.169 seconds (process running for 2.466)
-2024-09-11 20:07:04 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-11 20:07:04 - Initializing Servlet 'dispatcherServlet'
-2024-09-11 20:07:04 - Completed initialization in 1 ms
-2024-09-11 20:07:20 - Был выполнен запрос на получение продукта с id2
-2024-09-11 20:07:34 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-09-11 20:07:34 - HikariPool-1 - Shutdown initiated...
-2024-09-11 20:07:34 - HikariPool-1 - Shutdown completed.
-2024-09-11 20:07:36 - Starting ProductsApplication using Java 22.0.2 with PID 17696 (/home/arina/IdeaProjects/javaProducts/target/classes started by arina in /home/arina/IdeaProjects/javaProducts)
-2024-09-11 20:07:36 - No active profile set, falling back to 1 default profile: "default"
-2024-09-11 20:07:36 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-09-11 20:07:36 - Finished Spring Data repository scanning in 26 ms. Found 3 JPA repository interfaces.
-2024-09-11 20:07:36 - Tomcat initialized with port 8080 (http)
-2024-09-11 20:07:36 - Initializing ProtocolHandler ["http-nio-8080"]
-2024-09-11 20:07:36 - Starting service [Tomcat]
-2024-09-11 20:07:36 - Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-09-11 20:07:36 - Initializing Spring embedded WebApplicationContext
-2024-09-11 20:07:36 - Root WebApplicationContext: initialization completed in 641 ms
-2024-09-11 20:07:36 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-09-11 20:07:36 - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-09-11 20:07:36 - HHH000026: Second-level cache disabled
-2024-09-11 20:07:37 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-09-11 20:07:37 - HikariPool-1 - Starting...
-2024-09-11 20:07:37 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@18d610e1
-2024-09-11 20:07:37 - HikariPool-1 - Start completed.
-2024-09-11 20:07:37 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-09-11 20:07:37 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-09-11 20:07:37 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-09-11 20:07:37 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-09-11 20:07:37 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5c3e7128, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ce03a9d, org.springframework.security.web.context.SecurityContextHolderFilter@476dc0af, org.springframework.security.web.header.HeaderWriterFilter@4d0e6424, org.springframework.web.filter.CorsFilter@10c67c1c, org.springframework.security.web.csrf.CsrfFilter@174aabb2, org.springframework.security.web.authentication.logout.LogoutFilter@1cdb290c, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@48861d1, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@73d7e7aa, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3fae357f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1067192a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@570ede3b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c22cf4d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f7f9d3f, org.springframework.security.web.access.ExceptionTranslationFilter@5c8d685e, org.springframework.security.web.access.intercept.AuthorizationFilter@5f5fb335]
-2024-09-11 20:07:38 - Starting ProtocolHandler ["http-nio-8080"]
-2024-09-11 20:07:38 - Tomcat started on port 8080 (http) with context path ''
-2024-09-11 20:07:38 - Started ProductsApplication in 2.201 seconds (process running for 2.502)
+2024-09-16 03:42:33 - Securing HEAD /oauth2/authorization/github
+2024-09-16 03:42:33 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=lEAQs8IPQ3Oec_9IK3903qJPUGLRbrqzXT1sN2kilGw%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 03:42:33 - Securing GET /auth/url
+2024-09-16 03:42:33 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=f9JTpFeIDkJRW4hzCMY3BuZW1Q-DiG88WfVHnwPy9vI%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 03:46:12 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 03:46:12 - HikariPool-1 - Shutdown initiated...
+2024-09-16 03:46:12 - HikariPool-1 - Shutdown completed.
+2024-09-16 03:46:18 - Starting ProductsApplication using Java 22.0.2 with PID 56600 (/home/sergey/arina/javaProducts/target/classes started by sergey in /home/sergey/arina/javaProducts)
+2024-09-16 03:46:18 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 03:46:19 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 03:46:19 - Finished Spring Data repository scanning in 77 ms. Found 3 JPA repository interfaces.
+2024-09-16 03:46:20 - Tomcat initialized with port 8080 (http)
+2024-09-16 03:46:20 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-16 03:46:20 - Starting service [Tomcat]
+2024-09-16 03:46:20 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-09-16 03:46:20 - Initializing Spring embedded WebApplicationContext
+2024-09-16 03:46:20 - Root WebApplicationContext: initialization completed in 2164 ms
+2024-09-16 03:46:21 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 03:46:21 - HikariPool-1 - Starting...
+2024-09-16 03:46:21 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@28fa541
+2024-09-16 03:46:21 - HikariPool-1 - Start completed.
+2024-09-16 03:46:22 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 03:46:23 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 03:46:23 - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-09-16 03:46:23 - 11 mappings in 'requestMappingHandlerMapping'
+2024-09-16 03:46:24 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-16 03:46:24 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68024e57, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72321701, org.springframework.security.web.context.SecurityContextHolderFilter@6915351c, org.springframework.security.web.header.HeaderWriterFilter@3f7f9d3f, org.springframework.web.filter.CorsFilter@2f83467, org.springframework.security.web.authentication.logout.LogoutFilter@50331591, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@a3e458, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@49c72fb7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5c7b504, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@182469d0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7be3a837, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@247d44b4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62aefc75, org.springframework.security.web.access.ExceptionTranslationFilter@10c67c1c, org.springframework.security.web.access.intercept.AuthorizationFilter@785477e5]
+2024-09-16 03:46:24 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-16 03:46:24 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-16 03:46:24 - File system access not preferred: using SpringTemplateLoader
+2024-09-16 03:46:24 - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-16 03:46:24 - Tomcat started on port 8080 (http) with context path ''
+2024-09-16 03:46:24 - Started ProductsApplication in 7.374 seconds (process running for 8.74)
+2024-09-16 03:46:29 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 03:46:29 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 03:46:29 - Detected StandardServletMultipartResolver
+2024-09-16 03:46:29 - Detected AcceptHeaderLocaleResolver
+2024-09-16 03:46:29 - Detected FixedThemeResolver
+2024-09-16 03:46:29 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@419c70f6
+2024-09-16 03:46:29 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@86e8469
+2024-09-16 03:46:29 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-16 03:46:29 - Completed initialization in 5 ms
+2024-09-16 03:46:29 - Securing HEAD /oauth2/authorization/github
+2024-09-16 03:46:29 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=SDRMVyPZGrLOD6goh0_mt3VSJo-ft_vdpDbat3YNN0Y%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 03:46:29 - Securing GET /auth/url
+2024-09-16 03:46:29 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=8WlNf_HdoXB9pSzLLyzi22OX-IdCmEpo3v_QLFpiGrA%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 03:47:14 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 03:47:14 - HikariPool-1 - Shutdown initiated...
+2024-09-16 03:47:14 - HikariPool-1 - Shutdown completed.
+2024-09-16 03:47:21 - Starting ProductsApplication using Java 22.0.2 with PID 56826 (/home/sergey/arina/javaProducts/target/classes started by sergey in /home/sergey/arina/javaProducts)
+2024-09-16 03:47:21 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 03:47:23 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 03:47:23 - Finished Spring Data repository scanning in 75 ms. Found 3 JPA repository interfaces.
+2024-09-16 03:47:24 - Tomcat initialized with port 8080 (http)
+2024-09-16 03:47:24 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-16 03:47:24 - Starting service [Tomcat]
+2024-09-16 03:47:24 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-09-16 03:47:24 - Initializing Spring embedded WebApplicationContext
+2024-09-16 03:47:24 - Root WebApplicationContext: initialization completed in 2099 ms
+2024-09-16 03:47:24 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 03:47:24 - HikariPool-1 - Starting...
+2024-09-16 03:47:24 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5e541ef9
+2024-09-16 03:47:24 - HikariPool-1 - Start completed.
+2024-09-16 03:47:26 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 03:47:26 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 03:47:26 - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-09-16 03:47:27 - 11 mappings in 'requestMappingHandlerMapping'
+2024-09-16 03:47:27 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-16 03:47:27 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4010f232, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24be6e34, org.springframework.security.web.context.SecurityContextHolderFilter@41962299, org.springframework.security.web.header.HeaderWriterFilter@4df54c1, org.springframework.web.filter.CorsFilter@39f3285d, org.springframework.security.web.authentication.logout.LogoutFilter@3903cfc9, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@654dbb78, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@6c3627c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@63df2eb8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5b312863, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6421bc7e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e2546bf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1cf7c055, org.springframework.security.web.access.ExceptionTranslationFilter@14f254f, org.springframework.security.web.access.intercept.AuthorizationFilter@1fb379e4]
+2024-09-16 03:47:27 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-16 03:47:27 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-16 03:47:28 - File system access not preferred: using SpringTemplateLoader
+2024-09-16 03:47:28 - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-16 03:47:28 - Tomcat started on port 8080 (http) with context path ''
+2024-09-16 03:47:28 - Started ProductsApplication in 7.555 seconds (process running for 8.871)
+2024-09-16 03:47:32 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 03:47:32 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 03:47:32 - Detected StandardServletMultipartResolver
+2024-09-16 03:47:32 - Detected AcceptHeaderLocaleResolver
+2024-09-16 03:47:32 - Detected FixedThemeResolver
+2024-09-16 03:47:32 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@259ae1a9
+2024-09-16 03:47:32 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1ae26c59
+2024-09-16 03:47:32 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-16 03:47:32 - Completed initialization in 2 ms
+2024-09-16 03:47:32 - Securing HEAD /oauth2/authorization/github
+2024-09-16 03:47:32 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=Q_5x3RykgURKAlNSrutLh81yAIOY2hdxwcAcmSJjrW4%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 03:47:32 - Securing GET /auth/url
+2024-09-16 03:47:32 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=eMLH2vbshLOIZQIRuJd5aBJdVvOPYaijajoLFL1SZ8s%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 03:48:40 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 03:48:40 - HikariPool-1 - Shutdown initiated...
+2024-09-16 03:48:40 - HikariPool-1 - Shutdown completed.
+2024-09-16 03:48:47 - Starting ProductsApplication using Java 22.0.2 with PID 57146 (/home/sergey/arina/javaProducts/target/classes started by sergey in /home/sergey/arina/javaProducts)
+2024-09-16 03:48:47 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 03:48:49 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 03:48:49 - Finished Spring Data repository scanning in 78 ms. Found 3 JPA repository interfaces.
+2024-09-16 03:48:50 - Tomcat initialized with port 8080 (http)
+2024-09-16 03:48:50 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-16 03:48:50 - Starting service [Tomcat]
+2024-09-16 03:48:50 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-09-16 03:48:50 - Initializing Spring embedded WebApplicationContext
+2024-09-16 03:48:50 - Root WebApplicationContext: initialization completed in 3070 ms
+2024-09-16 03:48:52 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 03:48:52 - HikariPool-1 - Starting...
+2024-09-16 03:48:53 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@b9b97ad
+2024-09-16 03:48:53 - HikariPool-1 - Start completed.
+2024-09-16 03:48:56 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 03:48:57 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 03:48:57 - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-09-16 03:48:57 - 11 mappings in 'requestMappingHandlerMapping'
+2024-09-16 03:48:58 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-16 03:48:58 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@71f86562, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c141c7b, org.springframework.security.web.context.SecurityContextHolderFilter@4b8601a1, org.springframework.security.web.header.HeaderWriterFilter@52e34db, org.springframework.web.filter.CorsFilter@14f254f, org.springframework.security.web.authentication.logout.LogoutFilter@2ef3efcc, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@5cfde2a4, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@48a2b492, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7baf7e2c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@363ee411, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1de6689c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d8512e9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4df54c1, org.springframework.security.web.access.ExceptionTranslationFilter@3a7f382, org.springframework.security.web.access.intercept.AuthorizationFilter@1e9d6c78]
+2024-09-16 03:48:58 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-16 03:48:58 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-16 03:48:58 - File system access not preferred: using SpringTemplateLoader
+2024-09-16 03:48:59 - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-16 03:48:59 - Tomcat started on port 8080 (http) with context path ''
+2024-09-16 03:48:59 - Started ProductsApplication in 12.91 seconds (process running for 14.289)
+2024-09-16 03:49:33 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 03:49:33 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 03:49:33 - Detected StandardServletMultipartResolver
+2024-09-16 03:49:33 - Detected AcceptHeaderLocaleResolver
+2024-09-16 03:49:33 - Detected FixedThemeResolver
+2024-09-16 03:49:33 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2bd8c8f1
+2024-09-16 03:49:33 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@bb160fb
+2024-09-16 03:49:33 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-16 03:49:33 - Completed initialization in 4 ms
+2024-09-16 03:49:33 - Securing HEAD /oauth2/authorization/github
+2024-09-16 03:49:33 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=HqITlCf2PaY8-IC-NBkfHxh7F9XMuBCn7a9pxs_qL8Y%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 03:49:33 - Securing GET /auth/url
+2024-09-16 03:49:33 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=-kEQTZQFm3gxQdPFoLT_6jwX1wlMRJV2Gm9EvW7ox6c%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 03:49:56 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 03:49:56 - HikariPool-1 - Shutdown initiated...
+2024-09-16 03:49:56 - HikariPool-1 - Shutdown completed.
+2024-09-16 03:50:03 - Starting ProductsApplication using Java 22.0.2 with PID 57451 (/home/sergey/arina/javaProducts/target/classes started by sergey in /home/sergey/arina/javaProducts)
+2024-09-16 03:50:03 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 03:50:05 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 03:50:05 - Finished Spring Data repository scanning in 84 ms. Found 3 JPA repository interfaces.
+2024-09-16 03:50:05 - Tomcat initialized with port 8080 (http)
+2024-09-16 03:50:05 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-16 03:50:05 - Starting service [Tomcat]
+2024-09-16 03:50:05 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-09-16 03:50:06 - Initializing Spring embedded WebApplicationContext
+2024-09-16 03:50:06 - Root WebApplicationContext: initialization completed in 2126 ms
+2024-09-16 03:50:06 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 03:50:06 - HikariPool-1 - Starting...
+2024-09-16 03:50:06 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@536da29c
+2024-09-16 03:50:06 - HikariPool-1 - Start completed.
+2024-09-16 03:50:08 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 03:50:08 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 03:50:08 - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-09-16 03:50:09 - 11 mappings in 'requestMappingHandlerMapping'
+2024-09-16 03:50:09 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-16 03:50:09 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6908674b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a3e458, org.springframework.security.web.context.SecurityContextHolderFilter@5ce03a9d, org.springframework.security.web.header.HeaderWriterFilter@73d7e7aa, org.springframework.web.filter.CorsFilter@4b74a4d, org.springframework.security.web.authentication.logout.LogoutFilter@27f4761b, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@41962299, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@2e2546bf, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7be3a837, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@63df2eb8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1067192a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f7f9d3f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49c72fb7, org.springframework.security.web.access.ExceptionTranslationFilter@118f39f3, org.springframework.security.web.access.intercept.AuthorizationFilter@7bf997e0]
+2024-09-16 03:50:09 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-16 03:50:09 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-16 03:50:09 - File system access not preferred: using SpringTemplateLoader
+2024-09-16 03:50:09 - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-16 03:50:09 - Tomcat started on port 8080 (http) with context path ''
+2024-09-16 03:50:09 - Started ProductsApplication in 7.259 seconds (process running for 8.744)
+2024-09-16 03:50:12 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 03:50:12 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 03:50:12 - Detected StandardServletMultipartResolver
+2024-09-16 03:50:12 - Detected AcceptHeaderLocaleResolver
+2024-09-16 03:50:12 - Detected FixedThemeResolver
+2024-09-16 03:50:12 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1bf4a79b
+2024-09-16 03:50:12 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6f53f5a4
+2024-09-16 03:50:12 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-16 03:50:12 - Completed initialization in 2 ms
+2024-09-16 03:50:12 - Securing HEAD /oauth2/authorization/github
+2024-09-16 03:50:12 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=ujmdR6MNN1LOijM3WSSQBUtiL1sepLEw2_WGLQoIKtE%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 03:50:12 - Securing GET /auth/url
+2024-09-16 03:50:13 - Secured GET /auth/url
+2024-09-16 03:50:13 - GET "/auth/url", parameters={}
+2024-09-16 03:50:13 - Mapped to com.example.products.controller.AuthController#getAuthUrl(HttpServletRequest)
+2024-09-16 03:50:13 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-16 03:50:13 - Writing [{url=https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scop (truncated)...]
+2024-09-16 03:50:13 - Completed 200 OK
+2024-09-16 03:50:13 - Set SecurityContextHolder to anonymous SecurityContext
+2024-09-16 03:51:15 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 03:51:15 - HikariPool-1 - Shutdown initiated...
+2024-09-16 03:51:15 - HikariPool-1 - Shutdown completed.
+2024-09-16 03:51:22 - Starting ProductsApplication using Java 22.0.2 with PID 57690 (/home/sergey/arina/javaProducts/target/classes started by sergey in /home/sergey/arina/javaProducts)
+2024-09-16 03:51:22 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 03:51:24 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 03:51:24 - Finished Spring Data repository scanning in 70 ms. Found 3 JPA repository interfaces.
+2024-09-16 03:51:24 - Tomcat initialized with port 8080 (http)
+2024-09-16 03:51:24 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-16 03:51:24 - Starting service [Tomcat]
+2024-09-16 03:51:24 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-09-16 03:51:24 - Initializing Spring embedded WebApplicationContext
+2024-09-16 03:51:24 - Root WebApplicationContext: initialization completed in 2015 ms
+2024-09-16 03:51:25 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 03:51:25 - HikariPool-1 - Starting...
+2024-09-16 03:51:25 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3c6bd624
+2024-09-16 03:51:25 - HikariPool-1 - Start completed.
+2024-09-16 03:51:26 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 03:51:27 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 03:51:27 - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-09-16 03:51:27 - 11 mappings in 'requestMappingHandlerMapping'
+2024-09-16 03:51:27 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-16 03:51:28 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@f5a680, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@48a2b492, org.springframework.security.web.context.SecurityContextHolderFilter@39d37da8, org.springframework.security.web.header.HeaderWriterFilter@3a7f382, org.springframework.web.filter.CorsFilter@7bf997e0, org.springframework.security.web.authentication.logout.LogoutFilter@247d44b4, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@5afaae7e, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@5cfde2a4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b8601a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f7a7ce6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71f86562, org.springframework.security.web.access.ExceptionTranslationFilter@2c4e63b3, org.springframework.security.web.access.intercept.AuthorizationFilter@655b9169]
+2024-09-16 03:51:28 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-16 03:51:28 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-16 03:51:28 - File system access not preferred: using SpringTemplateLoader
+2024-09-16 03:51:28 - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-16 03:51:28 - Tomcat started on port 8080 (http) with context path ''
+2024-09-16 03:51:28 - Started ProductsApplication in 6.835 seconds (process running for 8.244)
+2024-09-16 03:51:34 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 03:51:34 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 03:51:34 - Detected StandardServletMultipartResolver
+2024-09-16 03:51:34 - Detected AcceptHeaderLocaleResolver
+2024-09-16 03:51:34 - Detected FixedThemeResolver
+2024-09-16 03:51:34 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@159314ca
+2024-09-16 03:51:34 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@35d4fecf
+2024-09-16 03:51:34 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-16 03:51:34 - Completed initialization in 2 ms
+2024-09-16 03:51:34 - Securing HEAD /oauth2/authorization/github
+2024-09-16 03:51:34 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=-kAPApKjTqoK2x0UWB7Ah42TUGxQFEx4huOizF1nNHg%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 03:51:34 - Securing GET /auth/url
+2024-09-16 03:51:34 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=fmXGmT7lFu7xvu3BOrCGVIWooEB4M8bYFs4YUqxQUCE%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 03:53:17 - Securing GET /products
+2024-09-16 03:53:17 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=RCO4YCwtNWM5aZVcK6OwMebZXkVy-ZsglpwhfQWHBLs%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 03:53:19 - Securing GET /products
+2024-09-16 03:53:19 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=rByph8lZ1VEV-GCScz3rtHrIeQgagWa-fm_PazW8CqE%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 03:53:56 - Securing GET /products
+2024-09-16 03:53:56 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=bAaKLZeOXGP7PlTkgc7uPb-NR6Ho8yzjdnykwzZX7xI%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 03:53:58 - Securing GET /login
+2024-09-16 03:53:58 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=aZbzUTQIMnHNOakB-M_UQOJi-kfSPGOO996K8g-Du9U%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 03:56:10 - Securing GET /login
+2024-09-16 03:56:10 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=ecywOk-sWjKWIxLRFiaPxmiXwJq149Ip9anz9a1kvnA%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 03:56:15 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 03:56:15 - HikariPool-1 - Shutdown initiated...
+2024-09-16 03:56:15 - HikariPool-1 - Shutdown completed.
+2024-09-16 03:56:22 - Starting ProductsApplication using Java 22.0.2 with PID 58427 (/home/sergey/arina/javaProducts/target/classes started by sergey in /home/sergey/arina/javaProducts)
+2024-09-16 03:56:22 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 03:56:24 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 03:56:24 - Finished Spring Data repository scanning in 76 ms. Found 3 JPA repository interfaces.
+2024-09-16 03:56:25 - Tomcat initialized with port 8080 (http)
+2024-09-16 03:56:25 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-16 03:56:25 - Starting service [Tomcat]
+2024-09-16 03:56:25 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-09-16 03:56:25 - Initializing Spring embedded WebApplicationContext
+2024-09-16 03:56:25 - Root WebApplicationContext: initialization completed in 2335 ms
+2024-09-16 03:56:25 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 03:56:25 - HikariPool-1 - Starting...
+2024-09-16 03:56:26 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4aab7195
+2024-09-16 03:56:26 - HikariPool-1 - Start completed.
+2024-09-16 03:56:27 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 03:56:28 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 03:56:28 - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-09-16 03:56:28 - 11 mappings in 'requestMappingHandlerMapping'
+2024-09-16 03:56:28 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-16 03:56:28 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6dd7af2f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e8bc83e, org.springframework.security.web.context.SecurityContextHolderFilter@5c7b504, org.springframework.security.web.header.HeaderWriterFilter@48b744fd, org.springframework.web.filter.CorsFilter@6c75c5e8, org.springframework.security.web.authentication.logout.LogoutFilter@14f254f, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@182469d0, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@435e224d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@62536882, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@69374e28, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4619854a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c040c8d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39c93af6, org.springframework.security.web.access.ExceptionTranslationFilter@247d44b4, org.springframework.security.web.access.intercept.AuthorizationFilter@a3e458]
+2024-09-16 03:56:28 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-16 03:56:28 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-16 03:56:29 - File system access not preferred: using SpringTemplateLoader
+2024-09-16 03:56:29 - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-16 03:56:29 - Tomcat started on port 8080 (http) with context path ''
+2024-09-16 03:56:29 - Started ProductsApplication in 7.674 seconds (process running for 9.116)
+2024-09-16 03:56:46 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 03:56:46 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 03:56:46 - Detected StandardServletMultipartResolver
+2024-09-16 03:56:46 - Detected AcceptHeaderLocaleResolver
+2024-09-16 03:56:46 - Detected FixedThemeResolver
+2024-09-16 03:56:46 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1e9afe4e
+2024-09-16 03:56:46 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@74cad577
+2024-09-16 03:56:46 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-16 03:56:46 - Completed initialization in 4 ms
+2024-09-16 03:56:46 - Securing HEAD /oauth2/authorization/github
+2024-09-16 03:56:46 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=en5fhl_naIeU5FX-m-zu5WI94WAKXk6j7GyeC7gra4I%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 03:56:46 - Securing GET /auth/url
+2024-09-16 03:56:46 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=QdJupz25wGYutuFK--gkplb8H89l3WG-3uQtvMHIB5g%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 04:00:02 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 04:00:02 - HikariPool-1 - Shutdown initiated...
+2024-09-16 04:00:02 - HikariPool-1 - Shutdown completed.
+2024-09-16 04:00:10 - Starting ProductsApplication using Java 22.0.2 with PID 58852 (/home/sergey/arina/javaProducts/target/classes started by sergey in /home/sergey/arina/javaProducts)
+2024-09-16 04:00:10 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 04:00:12 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 04:00:12 - Finished Spring Data repository scanning in 84 ms. Found 3 JPA repository interfaces.
+2024-09-16 04:00:13 - Tomcat initialized with port 8080 (http)
+2024-09-16 04:00:13 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-16 04:00:13 - Starting service [Tomcat]
+2024-09-16 04:00:13 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-09-16 04:00:13 - Initializing Spring embedded WebApplicationContext
+2024-09-16 04:00:13 - Root WebApplicationContext: initialization completed in 2834 ms
+2024-09-16 04:00:14 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 04:00:14 - HikariPool-1 - Starting...
+2024-09-16 04:00:14 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5f6a8efe
+2024-09-16 04:00:14 - HikariPool-1 - Start completed.
+2024-09-16 04:00:16 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 04:00:17 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 04:00:17 - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-09-16 04:00:17 - 11 mappings in 'requestMappingHandlerMapping'
+2024-09-16 04:00:17 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-16 04:00:17 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4917992b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62536882, org.springframework.security.web.context.SecurityContextHolderFilter@65dafe50, org.springframework.security.web.header.HeaderWriterFilter@3d5e3f58, org.springframework.web.filter.CorsFilter@1e9d6c78, org.springframework.security.web.authentication.logout.LogoutFilter@73d7e7aa, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@4619854a, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@6f627a1a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2c4e63b3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@27f4761b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@108d59b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38d9c9c4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52df6d0f, org.springframework.security.web.access.ExceptionTranslationFilter@31c31fa6, org.springframework.security.web.access.intercept.AuthorizationFilter@7be3a837]
+2024-09-16 04:00:17 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-16 04:00:17 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-16 04:00:18 - File system access not preferred: using SpringTemplateLoader
+2024-09-16 04:00:18 - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-16 04:00:18 - Tomcat started on port 8080 (http) with context path ''
+2024-09-16 04:00:18 - Started ProductsApplication in 8.514 seconds (process running for 10.097)
+2024-09-16 04:00:20 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 04:00:20 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 04:00:20 - Detected StandardServletMultipartResolver
+2024-09-16 04:00:20 - Detected AcceptHeaderLocaleResolver
+2024-09-16 04:00:20 - Detected FixedThemeResolver
+2024-09-16 04:00:20 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5e781b4f
+2024-09-16 04:00:20 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@379df603
+2024-09-16 04:00:20 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-16 04:00:20 - Completed initialization in 4 ms
+2024-09-16 04:00:20 - Securing HEAD /oauth2/authorization/github
+2024-09-16 04:00:20 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=D_puD0WmZ2rhhUZ2E_oG9FXNl-jIGK2JkwrJZtm8zMI%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 04:00:20 - Securing GET /auth/url
+2024-09-16 04:00:20 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=sn-VrlwXhtrCXmrJJTbr4YOBjuBHZ1mbi4aLOWqhU7k%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 04:00:30 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 04:00:30 - HikariPool-1 - Shutdown initiated...
+2024-09-16 04:00:30 - HikariPool-1 - Shutdown completed.
+2024-09-16 04:00:38 - Starting ProductsApplication using Java 22.0.2 with PID 59022 (/home/sergey/arina/javaProducts/target/classes started by sergey in /home/sergey/arina/javaProducts)
+2024-09-16 04:00:38 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 04:00:40 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 04:00:40 - Finished Spring Data repository scanning in 89 ms. Found 3 JPA repository interfaces.
+2024-09-16 04:00:40 - Tomcat initialized with port 8080 (http)
+2024-09-16 04:00:40 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-16 04:00:41 - Starting service [Tomcat]
+2024-09-16 04:00:41 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-09-16 04:00:41 - Initializing Spring embedded WebApplicationContext
+2024-09-16 04:00:41 - Root WebApplicationContext: initialization completed in 2320 ms
+2024-09-16 04:00:41 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 04:00:41 - HikariPool-1 - Starting...
+2024-09-16 04:00:42 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@632d4cf2
+2024-09-16 04:00:42 - HikariPool-1 - Start completed.
+2024-09-16 04:00:44 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 04:00:46 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 04:00:46 - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-09-16 04:00:46 - 11 mappings in 'requestMappingHandlerMapping'
+2024-09-16 04:00:46 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-16 04:00:46 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@27f4761b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52df6d0f, org.springframework.security.web.context.SecurityContextHolderFilter@38d9c9c4, org.springframework.security.web.header.HeaderWriterFilter@65dafe50, org.springframework.web.filter.CorsFilter@2bb118ae, org.springframework.security.web.authentication.logout.LogoutFilter@5ce03a9d, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@6f627a1a, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@62536882, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5a2297d7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5e3a5f0c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3687b83c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4cbd17b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5afaae7e, org.springframework.security.web.access.ExceptionTranslationFilter@615b1baf, org.springframework.security.web.access.intercept.AuthorizationFilter@48b744fd]
+2024-09-16 04:00:47 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-16 04:00:47 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-16 04:00:47 - File system access not preferred: using SpringTemplateLoader
+2024-09-16 04:00:47 - Tomcat started on port 8080 (http) with context path ''
+2024-09-16 04:00:47 - Started ProductsApplication in 9.941 seconds (process running for 11.7)
+2024-09-16 04:00:47 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 04:00:47 - HikariPool-1 - Shutdown initiated...
+2024-09-16 04:00:47 - HikariPool-1 - Shutdown completed.
+2024-09-16 04:00:54 - Starting ProductsApplication using Java 22.0.2 with PID 59169 (/home/sergey/arina/javaProducts/target/classes started by sergey in /home/sergey/arina/javaProducts)
+2024-09-16 04:00:54 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 04:00:55 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 04:00:55 - Finished Spring Data repository scanning in 68 ms. Found 3 JPA repository interfaces.
+2024-09-16 04:00:56 - Tomcat initialized with port 8080 (http)
+2024-09-16 04:00:56 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-16 04:00:56 - Starting service [Tomcat]
+2024-09-16 04:00:56 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-09-16 04:00:56 - Initializing Spring embedded WebApplicationContext
+2024-09-16 04:00:56 - Root WebApplicationContext: initialization completed in 2073 ms
+2024-09-16 04:00:57 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 04:00:57 - HikariPool-1 - Starting...
+2024-09-16 04:00:57 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@645ba24a
+2024-09-16 04:00:57 - HikariPool-1 - Start completed.
+2024-09-16 04:00:58 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 04:00:59 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 04:00:59 - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-09-16 04:00:59 - 11 mappings in 'requestMappingHandlerMapping'
+2024-09-16 04:00:59 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-16 04:00:59 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3f910f36, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6421bc7e, org.springframework.security.web.context.SecurityContextHolderFilter@7baf7e2c, org.springframework.security.web.header.HeaderWriterFilter@2a045e85, org.springframework.web.filter.CorsFilter@2e2546bf, org.springframework.security.web.authentication.logout.LogoutFilter@655b9169, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@363ee411, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@c950fd, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@62966c9f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5e572b08, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@349686e8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c3e7128, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6908674b, org.springframework.security.web.access.ExceptionTranslationFilter@3d8512e9, org.springframework.security.web.access.intercept.AuthorizationFilter@5cfde2a4]
+2024-09-16 04:00:59 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-16 04:00:59 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-16 04:01:00 - File system access not preferred: using SpringTemplateLoader
+2024-09-16 04:01:00 - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-16 04:01:00 - Tomcat started on port 8080 (http) with context path ''
+2024-09-16 04:01:00 - Started ProductsApplication in 7.051 seconds (process running for 8.394)
+2024-09-16 04:01:03 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 04:01:03 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 04:01:03 - Detected StandardServletMultipartResolver
+2024-09-16 04:01:03 - Detected AcceptHeaderLocaleResolver
+2024-09-16 04:01:03 - Detected FixedThemeResolver
+2024-09-16 04:01:03 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1bf4a79b
+2024-09-16 04:01:03 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6f53f5a4
+2024-09-16 04:01:03 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-16 04:01:03 - Completed initialization in 4 ms
+2024-09-16 04:01:03 - Securing HEAD /oauth2/authorization/github
+2024-09-16 04:01:03 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=LjViPy2CH89Ew98kYgFM_Ihutajp-9LYCELfogsxvR8%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 04:01:03 - Securing GET /auth/url
+2024-09-16 04:01:03 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=pkft6YUoFdC1Puq7EhK-y3ocUlk-xOlvaAmPmKpMQfk%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 04:07:53 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 04:07:53 - HikariPool-1 - Shutdown initiated...
+2024-09-16 04:07:53 - HikariPool-1 - Shutdown completed.
+2024-09-16 04:08:00 - Starting ProductsApplication using Java 22.0.2 with PID 59823 (/home/sergey/arina/javaProducts/target/classes started by sergey in /home/sergey/arina/javaProducts)
+2024-09-16 04:08:00 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 04:08:02 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 04:08:02 - Finished Spring Data repository scanning in 77 ms. Found 3 JPA repository interfaces.
+2024-09-16 04:08:03 - Tomcat initialized with port 8080 (http)
+2024-09-16 04:08:03 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-16 04:08:03 - Starting service [Tomcat]
+2024-09-16 04:08:03 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-09-16 04:08:03 - Initializing Spring embedded WebApplicationContext
+2024-09-16 04:08:03 - Root WebApplicationContext: initialization completed in 2346 ms
+2024-09-16 04:08:04 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 04:08:04 - HikariPool-1 - Starting...
+2024-09-16 04:08:04 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@28fa541
+2024-09-16 04:08:04 - HikariPool-1 - Start completed.
+2024-09-16 04:08:05 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 04:08:06 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 04:08:06 - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-09-16 04:08:06 - 11 mappings in 'requestMappingHandlerMapping'
+2024-09-16 04:08:06 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-16 04:08:06 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@182469d0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62aefc75, org.springframework.security.web.context.SecurityContextHolderFilter@247d44b4, org.springframework.security.web.header.HeaderWriterFilter@6915351c, org.springframework.web.filter.CorsFilter@c6653e, org.springframework.security.web.authentication.logout.LogoutFilter@f5a680, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@49c72fb7, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@72321701, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@c040c8d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@435e224d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48b744fd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ef3efcc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@788fa91f, org.springframework.security.web.access.ExceptionTranslationFilter@62966c9f, org.springframework.security.web.access.intercept.AuthorizationFilter@3f910f36]
+2024-09-16 04:08:06 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-16 04:08:06 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-16 04:08:07 - File system access not preferred: using SpringTemplateLoader
+2024-09-16 04:08:07 - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-16 04:08:07 - Tomcat started on port 8080 (http) with context path ''
+2024-09-16 04:08:07 - Started ProductsApplication in 7.398 seconds (process running for 8.685)
+2024-09-16 04:08:14 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 04:08:14 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 04:08:14 - Detected StandardServletMultipartResolver
+2024-09-16 04:08:14 - Detected AcceptHeaderLocaleResolver
+2024-09-16 04:08:14 - Detected FixedThemeResolver
+2024-09-16 04:08:14 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@15e748b5
+2024-09-16 04:08:14 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@7325b786
+2024-09-16 04:08:14 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-16 04:08:14 - Completed initialization in 4 ms
+2024-09-16 04:08:14 - Securing HEAD /oauth2/authorization/github
+2024-09-16 04:08:14 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=4AJxzmgaBr_PBjCg5eO1aohkzpX22Y00YL2olIPtYsg%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 04:08:14 - Securing GET /auth/url
+2024-09-16 04:08:14 - Redirecting to https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scope=read:user%20user:email&state=k2Qv5fFn0yiEbl_WxsaUJbuIqYKh_whzxwB-6BPBlWA%3D&redirect_uri=http://localhost:8080/login/oauth2/code/github
+2024-09-16 04:08:33 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 04:08:33 - HikariPool-1 - Shutdown initiated...
+2024-09-16 04:08:33 - HikariPool-1 - Shutdown completed.
+2024-09-16 04:08:40 - Starting ProductsApplication using Java 22.0.2 with PID 60005 (/home/sergey/arina/javaProducts/target/classes started by sergey in /home/sergey/arina/javaProducts)
+2024-09-16 04:08:40 - No active profile set, falling back to 1 default profile: "default"
+2024-09-16 04:08:41 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-16 04:08:41 - Finished Spring Data repository scanning in 64 ms. Found 3 JPA repository interfaces.
+2024-09-16 04:08:42 - Tomcat initialized with port 8080 (http)
+2024-09-16 04:08:42 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-16 04:08:42 - Starting service [Tomcat]
+2024-09-16 04:08:42 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-09-16 04:08:42 - Initializing Spring embedded WebApplicationContext
+2024-09-16 04:08:42 - Root WebApplicationContext: initialization completed in 1999 ms
+2024-09-16 04:08:43 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-16 04:08:43 - HikariPool-1 - Starting...
+2024-09-16 04:08:43 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@298e002d
+2024-09-16 04:08:43 - HikariPool-1 - Start completed.
+2024-09-16 04:08:44 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 04:08:45 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-16 04:08:45 - No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-09-16 04:08:45 - 11 mappings in 'requestMappingHandlerMapping'
+2024-09-16 04:08:45 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-16 04:08:46 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6421bc7e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e2546bf, org.springframework.security.web.context.SecurityContextHolderFilter@73d7e7aa, org.springframework.security.web.header.HeaderWriterFilter@48861d1, org.springframework.web.filter.CorsFilter@5e572b08, org.springframework.security.web.authentication.logout.LogoutFilter@4917992b, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@4df54c1, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@41962299, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4193da4d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6908674b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c3e7128, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ce03a9d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@a3e458, org.springframework.security.web.access.ExceptionTranslationFilter@46f597f1, org.springframework.security.web.access.intercept.AuthorizationFilter@53fb3e1b]
+2024-09-16 04:08:46 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-16 04:08:46 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-16 04:08:46 - File system access not preferred: using SpringTemplateLoader
+2024-09-16 04:08:46 - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-16 04:08:46 - Tomcat started on port 8080 (http) with context path ''
+2024-09-16 04:08:46 - Started ProductsApplication in 7.052 seconds (process running for 8.473)
+2024-09-16 04:08:50 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-16 04:08:50 - Initializing Servlet 'dispatcherServlet'
+2024-09-16 04:08:50 - Detected StandardServletMultipartResolver
+2024-09-16 04:08:50 - Detected AcceptHeaderLocaleResolver
+2024-09-16 04:08:50 - Detected FixedThemeResolver
+2024-09-16 04:08:50 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@715523b8
+2024-09-16 04:08:50 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6f53f5a4
+2024-09-16 04:08:50 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-16 04:08:50 - Completed initialization in 4 ms
+2024-09-16 04:08:50 - Securing HEAD /oauth2/authorization/github
+2024-09-16 04:08:50 - Set SecurityContextHolder to anonymous SecurityContext
+2024-09-16 04:08:50 - Saved request http://localhost:8080/oauth2/authorization/github?continue to session
+2024-09-16 04:08:50 - Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], Not [And [Or [Ant [pattern='/login'], Ant [pattern='/favicon.ico']], And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@4b2af0eb, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]]], org.springframework.security.config.annotation.web.configurers.oauth2.client.OAuth2LoginConfigurer$$Lambda/0x000079e79b909100@4a12a324]
+2024-09-16 04:08:50 - Match found! Executing org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint@6db3cd8b
+2024-09-16 04:08:50 - Redirecting to http://localhost:8080//github
+2024-09-16 04:08:50 - Securing GET /auth/url
+2024-09-16 04:08:50 - Secured GET /auth/url
+2024-09-16 04:08:50 - GET "/auth/url", parameters={}
+2024-09-16 04:08:50 - Mapped to com.example.products.controller.AuthController#getAuthUrl(HttpServletRequest)
+2024-09-16 04:08:50 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-16 04:08:50 - Writing [{url=https://github.com/login/oauth/authorize?response_type=code&client_id=Ov23lilkXq3azRQsyR7d&scop (truncated)...]
+2024-09-16 04:08:50 - Completed 200 OK
+2024-09-16 04:08:50 - Set SecurityContextHolder to anonymous SecurityContext
+2024-09-16 07:19:10 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-16 07:19:10 - HikariPool-1 - Shutdown initiated...
+2024-09-16 07:19:10 - HikariPool-1 - Shutdown completed.
