@@ -7,15 +7,16 @@ import com.example.products.repository.UserRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
+import java.util.List;
 import java.util.Optional;
 // http://localhost:8080/admin/assignAdminRole/3
 
-@RestController
+@Controller
 @RequestMapping("/admin")
 public class AdminController {
 
@@ -28,12 +29,30 @@ public class AdminController {
     }
 
     @PreAuthorize("hasRole('ADMIN')")
+    @GetMapping("/users")
+    public String usersList(Model model) {
+        model.addAttribute("users", userRepository.findAll());
+
+        return "users";
+    }
+
+    @PreAuthorize("hasRole('ADMIN')")
+    @DeleteMapping("/users/{id}")
+    public String deleteUser(@PathVariable Long id) {
+        userRepository.deleteById(id);
+
+        return "redirect:/admin/users";
+    }
+
+    @PreAuthorize("hasRole('ADMIN')")
     @GetMapping("/assignAdminRole/{userId}")
-    public ResponseEntity<String> assignAdminRole(@PathVariable Long userId) {
+    public String assignAdminRole(@PathVariable Long userId) {
         // Находим пользователя по ID
         Optional<User> optionalUser = userRepository.findById(userId);
         if (optionalUser.isEmpty()) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found");
+            throw new ResponseStatusException(
+                    HttpStatus.NOT_FOUND, "User not found"
+            );
         }
 
         User user = optionalUser.get();
@@ -47,7 +66,7 @@ public class AdminController {
         // Сохраняем изменения в БД
         userRepository.save(user);
 
-        return ResponseEntity.ok("Role ADMIN assigned to user with ID: " + userId);
+        return "redirect:/admin/users";
     }
 }
 
